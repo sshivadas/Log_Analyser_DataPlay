@@ -13,4 +13,4 @@ It includes:
 
 -Console-based output
 
--deploy the parser and analysis tool using Streamlit for an interactive web-based interface.
+-Deploy the parser and analysis tool using Streamlit for an interactive web-based interface.

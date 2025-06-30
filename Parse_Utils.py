@@ -39,4 +39,4 @@ def get_timestamp(date_part, time_part):
 
 def get_user_roles(user_role_part):
     #multiple user role parsing
-    return user_role_part.split(",") if "," in user_role_part else [user_role_part]
+    return user_role_part.split(",") if "," in user_role_part else user_role_part

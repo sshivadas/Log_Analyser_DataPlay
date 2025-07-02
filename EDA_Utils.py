@@ -42,8 +42,11 @@ def get_all_logs_timeframe(parsed_logs):
         min_timestamp = min(all_timestamps)
         total_timeframe = max_timestamp - min_timestamp
         days, hrs, mins, secs = decompose_seconds(total_timeframe)
-        decomposed_durations = {"days": days,
+        total_duration = {"days": days,
                                 "hours": hrs,
                                 "minutes": mins,
-                                "seconds": secs}
-        return decomposed_durations
+                                "seconds": secs,
+                                "start" :min_timestamp,
+                                "end" : max_timestamp
+                                }
+        return total_duration
